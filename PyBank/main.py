@@ -1,6 +1,7 @@
 import csv, os
 
 budget_csv = os.path.join("Resources", "budget_data.csv")
+output_csv = os.path.join("Resources", "output.csv")
 
 num_month = 0
 total_amount = 0
@@ -50,7 +51,6 @@ print(f"Greatest Increase in Profits: {greatest_profit_increase_month} (${greate
 print(f"Greatest Decrease in Profits: {greatest_profit_decrease_month} (${greatest_profit_decrease})")
 
 # output lines above to text file
-output_csv = os.path.join("Resources", "output.csv")
 with open(output_csv, "w", newline="") as writefile:
     writer = csv.writer(writefile)
 
